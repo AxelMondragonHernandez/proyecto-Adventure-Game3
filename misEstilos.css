@@ -1,0 +1,26 @@
+body {
+ background-image: url("https://bit.ly/2FfckoS");
+ background-repeat: no-repeat;
+ background-size: cover;
+ color: white;
+}
+p {
+ text-align: center;
+ font-size: 200%;
+ 
+}
+h1 {
+ text-align: center;
+}
+a {
+ color: rgb(255, 176, 176);
+ background-color:black;
+}
+a:hover {
+  color: hotpink;
+}
+
+mark {
+    background-color: black;
+    color: white;
+}

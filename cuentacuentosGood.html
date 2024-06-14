@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<style> 
+div::first-letter {
+    font-size: 500%;
+    color: green;
+}
+</style>
+ <meta charset="UTF-8">
+ <title>cuentacuentos.html</title>
+ <link rel = "stylesheet"
+ type = "text/css"
+ href = "styleStoryGood.css" />
+ <script type="text/javascript"
+ src = "storyWordGood.js">
+ </script>
+</head>
+<body>
+ <h1>¡Personaliza tu aventura!</h1>
+ <form action="">
+ <fieldset>
+ <label for = "txtBoy">Nombre de chico:</label>
+ <input type = "text"
+ id = "txtBoy" />
+ <label for = "txtGirl">Nombre de chica:</label>
+ <input type = "text"
+ id = "txtGirl" />
+
+ <label for = "txtArma">Arma:</label>
+ <select id="txtArma" name="Elige un arma">
+
+    <option value="Almohada">Almohada</option>
+
+    <option value="Palo">Palo</option>
+	
+	<option value="Extintor">Extintor</option>
+
+  </select>
+
+ <label for = "txtNum">Numero:</label>
+ <input type = "text"
+ id = "txtNum" />
+
+ <label for = "txtMoney">Dinero:</label>
+ <input type = "text"
+ id = "txtMoney" />
+
+ <label for = "txtEnemigo">Profesor:</label>
+ <input type = "text"
+ id = "txtEnemigo" />
+
+ <label for = "txtV">Verbo:</label>
+ <input type = "text"
+ id = "txtV" />
+
+ <label for = "txtAsig">Asignatura:</label>
+ <input type = "text"
+ id = "txtAsig" />
+ 
+ <label for = "txtImagen">Compañero:</label>
+ <select id="txtImagen" name="elige">
+
+    <option value="Lagarto">Lagarto</option>
+
+    <option value="Pajaro">Pajaro</option>
+	
+	<option value="Cobaya">Cobaya</option>
+	
+	<option value="Piedra">Piedra</option>
+
+  </select>
+  
+ <button type = "button" onclick = "tellStory()">
+ Tu aventura
+ </button>
+
+ </fieldset>
+ </form>
+<br>
+
+<audio id="myAudio">
+  <source src="suspense.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="setTimeout(playAudio, 3000);" type="button">Despues de 3 segundos sonará la música</button>
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+
+</script>
+
+ 
+ <div id = "output">
+
+ </div>
+ <p style= "text-align:center; font-size:150%;">FIN</p>
+</body>
+</html>
